@@ -11,7 +11,7 @@ from get_bugs.gain_bugs import GetBugs
 class WXWorkSMS:
     def __init__(self):
         self.headers = {"Content-Type": "text/html"}
-        self.send_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=c2cf976f-2e26-47ac-a32a-ea878eaa46df"  # 测试机器人webhook地址
+        self.send_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=XXXXXXX"  # 测试机器人webhook地址
         self.auth = ('Content-Type', 'application/json')
 
     def send_requests(self, send_data):
