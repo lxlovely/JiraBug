@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2023/1/9 4:24 PM
-# @Author  : chenting
+# @Author  : XXXX
 # @File    : get_cookie.py
 # @Software : PyCharm
 import json
@@ -13,7 +13,7 @@ from jira import JIRA
 
 class GetBugs:
     #定义类属性
-    jira = JIRA(server="https://jira.newbanker.cn/", auth=("chenting", "newbanker@123"))
+    jira = JIRA(server="公司jira域名", auth=("jira登陆账号", "登陆用户名"))
 
     # def get_project(self):#获取项目
     #     # myself = jira.myself()
@@ -21,12 +21,12 @@ class GetBugs:
     #     print(project1)
     #     for key in project1:
     #         project=self.jira.project(key)
-    #         if project.name=="建信基金":
+    #         if project.name=="项目名字":
     #             return project.name
 
     def get_bugs(self):#获取所有bug,筛选状态为Done的数据并发送邮件到企业邮箱
-        # issue = self.jira.issue('建信基金')
-        jql = 'project="建信基金"'
+        # issue = self.jira.issue('项目名字')
+        jql = 'project="项目名字"'
         issues = self.jira.search_issues(jql)#查找制定项目的问题数据
         list=[]
         for key in issues:
