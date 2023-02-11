@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2023/1/10 9:07 PM
-# @Author  : chenting
+# @Author  : xxxx
 # @File    : send_data_wx.py
 # @Software : PyCharm
 
