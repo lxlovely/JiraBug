@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2023/1/11 6:03 PM
-# @Author  : chenting
+# @Author  : XXx
 # @File    : send_time.py
 # @Software : PyCharm
 
